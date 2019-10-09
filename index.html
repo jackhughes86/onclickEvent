@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <img
+      id="myImage"
+      onclick="changeImage()"
+      src="pinkarrow.jpg"
+      width="400"
+      height="500"
+      position="center"
+    />
+
+    <h1>CLICK</h1>
+
+    <script>
+      function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match('sky')) {
+          image.src = 'pinkarrow.jpg';
+        } else {
+          image.src = 'skyArrow.png';
+        }
+      }
+    </script>
+  </body>
+</html>
